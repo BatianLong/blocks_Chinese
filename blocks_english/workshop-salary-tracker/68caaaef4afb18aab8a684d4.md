@@ -6,14 +6,14 @@ dashedName: step-31
 ---
 
 # --description--
+现在来体验你的升级防护是否给力：尝试给 `charlie_brown.level` 赋一些无效值（比如乱写的字符串、或者当前同级 `trainee`），观察抛出的错误信息是否清晰。
 
-It's time to test your new setter. Try to assign invalid values such as a random string or the current level (`trainee`) to `charlie_brown.level` and see the error messages in the console.
+确认效果后，把那些触发错误的试验代码删除，并正式将 `charlie_brown.level` 设置为 `'junior'`，开启晋升之旅！
 
-Once you've done, remove the lines raising errors and set `charlie_brown.level` to the string `junior`.
+测试 + 清理是专业开发者的黄金组合，继续加油～
 
 # --hints--
-
-You should set `charlie_brown.level` to the string `junior`.
+最终需要把 `charlie_brown.level` 设成 `'junior'`。
 
 ```js
 ({ test: () => assert(runPython(`_Node(_code).has_stmt("charlie_brown.level = 'junior'")`)) })

@@ -6,14 +6,14 @@ dashedName: step-29
 ---
 
 # --description--
+等级升级，薪资当然也要一并“跟上步伐”！
 
-When the level is modified, you need to update the salary as well.
+在真正更新 `self._level` 之前，先把 `self._salary` 设置为新等级对应的基础薪资，这样数据始终同步，类的行为就更可信赖。
 
-Before setting `self._level`, set `self._salary` to the base salary for the new level.
+这一步让你的逻辑开始变得“成体系”，继续保持～
 
 # --hints--
-
-You should set `self._salary` to the base salary for the new level.
+需要先把 `self._salary` 更新为新等级的基础薪资。
 
 ```js
 ({ test: () => runPython(`

@@ -7,9 +7,9 @@ dashedName: step-17
 
 # --description--
 
-For the truthy condition, if `prev` includes `item`, return a filtered array with `item` removed.
+对于真值条件，如果 `prev` 包含 `item`，则返回一个过滤后的数组，其中移除了 `item`。
 
-Chain the `filter()` method to `prev` and pass it an anonymous function that takes `i` as an argument. Inside the function, check that `i` is not strictly equal to `item`. This will return a new array with all items except `item`.
+将 `filter()` 方法链接到 `prev`，并向其传递一个接受 `i` 作为参数的匿名函数。在函数内部，检查 `i` 是否不严格等于 `item`。这将返回一个新数组，其中包含除 `item` 外的所有项目。
 
 # --hints--
 

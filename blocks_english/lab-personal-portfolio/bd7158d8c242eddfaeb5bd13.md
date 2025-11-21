@@ -1,6 +1,6 @@
 ---
 id: bd7158d8c242eddfaeb5bd13
-title: Build a Personal Portfolio
+title: 构建一个个人作品集
 challengeType: 25
 dashedName: build-a-personal-portfolio
 demoType: onClick
@@ -8,34 +8,34 @@ demoType: onClick
 
 # --description--
 
-**目标�?*实现以下用户需求并通过所有测试以完成实验�?
+**目标：** 实现以下用户需求并通过所有测试以完成实验。
 
 **用户需求：**
 
-1. Your portfolio should have a welcome section with an `id` of `welcome-section`.
-2. The welcome section should have an `h1` element that contains text.
-3. Your portfolio should have a projects section with an `id` of `project-section`.
-4. The projects section should contain at least one element with a `class` of `project-tile` to hold a project.
-5. The projects section should contain at least one link to a project.
-6. Your portfolio should have a navbar with an id of `navbar`.
-7. The navbar should contain at least one link that you can click on to navigate to different sections of the page.
-8. Your portfolio should have a link with an id of `profile-link`, which opens your GitHub or MasterPuti profile in a new tab.
-9. Your portfolio should have at least one media query.
-10. The height of the welcome section should be equal to the height of the viewport.
-11. The navbar should always be at the top of the viewport.
+1. 您的作品集应该有一个带有 `id` 为 `welcome-section` 的欢迎部分。
+2. 欢迎部分应该有一个包含文本的 `h1` 元素。
+3. 您的作品集应该有一个带有 `id` 为 `project-section` 的项目部分。
+4. 项目部分应该包含至少一个带有 `class` 为 `project-tile` 的元素来存放项目。
+5. 项目部分应该包含至少一个指向项目的链接。
+6. 您的作品集应该有一个带有 `id` 为 `navbar` 的导航栏。
+7. 导航栏应该包含至少一个您可以点击以导航到页面不同部分的链接。
+8. 您的作品集应该有一个带有 `id` 为 `profile-link` 的链接，该链接在新标签页中打开您的 GitHub 或 MasterPuti 个人资料。
+9. 您的作品集应该至少有一个媒体查询。
+10. 欢迎部分的高度应该等于视口的高度。
+11. 导航栏应该始终位于视口的顶部。
 
-**Note:** Be sure to link your stylesheet in your HTML and apply your CSS.
+**注意：** 确保在 HTML 中链接您的样式表并应用您的 CSS。
 
 # --hints--
 
-Your portfolio should have a "Welcome" section with an `id` of `welcome-section`.
+您的作品集应该有一个带有 `id` 为 `welcome-section` 的"欢迎"部分。
 
 ```js
 const el = document.getElementById('welcome-section');
 assert.isNotNull(el);
 ```
 
-Your `#welcome-section` element should contain an `h1` element.
+您的 `#welcome-section` 元素应该包含一个 `h1` 元素。
 
 ```js
 assert.isAbove(
@@ -45,7 +45,7 @@ assert.isAbove(
 );
 ```
 
-You should not have any empty `h1` elements within `#welcome-section` element.
+您的 `#welcome-section` 元素中不应该有任何空的 `h1` 元素。
 
 ```js
 assert.isAbove(
@@ -55,14 +55,14 @@ assert.isAbove(
 );
 ```
 
-You should have a "Projects" section with an `id` of `project-section`.
+您应该有一个带有 `id` 为 `project-section` 的"项目"部分。
 
 ```js
 const el = document.getElementById('project-section');
 assert.isNotNull(el);
 ```
 
-Your portfolio should contain at least one element with a class of `project-tile`.
+您的作品集应该包含至少一个带有 `class` 为 `project-tile` 的元素。
 
 ```js
 assert.isAbove(
@@ -71,20 +71,20 @@ assert.isAbove(
 );
 ```
 
-Your `#project-section` element should contain at least one `a` element.
+您的 `#project-section` 元素应该包含至少一个 `a` 元素。
 
 ```js
 assert.isAbove(document.querySelectorAll('#project-section a').length, 0);
 ```
 
-Your portfolio should have a navbar with an `id` of `navbar`.
+您的作品集应该有一个带有 `id` 为 `navbar` 的导航栏。
 
 ```js
 const el = document.getElementById('navbar');
 assert.isNotNull(el);
 ```
 
-Your `#navbar` element should contain at least one `a` element whose `href` attribute starts with `#`.
+您的 `#navbar` 元素应该包含至少一个 `href` 属性以 `#` 开头的 `a` 元素。
 
 ```js
 const links = [...document.querySelectorAll('#navbar a')].filter(
@@ -94,7 +94,7 @@ const links = [...document.querySelectorAll('#navbar a')].filter(
 assert.isAbove(links.length, 0, 'Navbar should contain an anchor link ');
 ```
 
-Your portfolio should have an `a` element with an `id` of `profile-link`.
+您的作品集应该有一个带有 `id` 为 `profile-link` 的 `a` 元素。
 
 ```js
 const el = document.getElementById('profile-link');
@@ -102,7 +102,7 @@ assert.isNotNull(el);
 assert.strictEqual(el.tagName, 'A');
 ```
 
-Your `#profile-link` element should have a `target` attribute of `_blank`.
+您的 `#profile-link` 元素应该有一个 `target` 属性，值为 `_blank`。
 
 ```js
 const el = document.getElementById('profile-link');
@@ -110,7 +110,7 @@ assert.isNotNull(el);
 assert.strictEqual(el.target, '_blank');
 ```
 
-Your portfolio should use at least one media query.
+您的作品集应该使用至少一个媒体查询。
 
 ```js
 const htmlSourceAttr = Array.from(document.querySelectorAll('source')).map(el => el.getAttribute('media'))
@@ -118,7 +118,7 @@ const cssCheck = new __helpers.CSSHelp(document).getCSSRules('media')
 assert.isTrue(cssCheck.length > 0 || htmlSourceAttr.length > 0);
 ```
 
-Your `#navbar` element should always be at the top of the viewport.
+您的 `#navbar` 元素应该始终位于视口的顶部。
 
 ```js
   const timeout = milliseconds =>
@@ -726,4 +726,3 @@ footer i {
   }
 }
 ```
-

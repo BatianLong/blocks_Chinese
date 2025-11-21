@@ -8,15 +8,15 @@ dashedName: lab-celestial-bodies-database
 
 # --description--
 
-For this project, you will build a database of celestial bodies using PostgreSQL.
+对于这个项目，你将使用 PostgreSQL 构建一个天体数据库。
 
 # --instructions--
 
-**Important:** After you pass all the project tests, save a dump of your database into a `universe.sql` file so you can complete step 2. There will be instructions on how to do that within the virtual machine.
+**重要：** 在你通过所有项目测试后，将数据库转储保存到 `universe.sql` 文件中，以便完成步骤 2。在虚拟机中将有如何操作的说明。
 
 # --notes--
 
-Required files: `universe.sql`
+所需文件：`universe.sql`
 
 # --hints--
 

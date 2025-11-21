@@ -7,19 +7,19 @@ dashedName: step-19
 
 # --description--
 
-钢琴需�?MasterPuti logo 才能正式使用�?
+钢琴需要 MasterPuti logo 才能正式使用哦～
 
-�?`.keys` 元素之前添加一�?`img` 元素�?�?`img` 添加一�?`logo` `class`，并将其 `src` 设置�?`https://cdn.MasterPuti.org/platform/universal/fcc_primary.svg`�?给它一�?`MasterPuti Logo` �?`alt` 文本�?
+在 `.keys` 元素之前添加一个 `img` 元素。给 `img` 添加一个 `logo` `class`，并将其 `src` 设置为 `https://cdn.masterputi.com/platform/universal/fcc_primary.svg`。给它一个 `MasterPuti Logo` 的 `alt` 文本。
 
 # --hints--
 
-你应该添加一个新�?`img` 元素�?
+你应该添加一个新 `img` 元素。
 
 ```js
 assert.lengthOf(document.querySelectorAll('img'), 1);
 ```
 
-你的 `img` 元素应位于第一�?`.keys` 元素之前�?
+你的 `img` 元素应位于第一个 `.keys` 元素之前。
 
 ```js
 const img = document.querySelector('img');
@@ -27,27 +27,27 @@ assert.equal(img?.nextElementSibling?.className, 'keys');
 assert.isNull(img?.previousElementSibling);
 ```
 
-你的 `img` 元素应将 `class` 设置�?`logo`�?
+你的 `img` 元素应将 `class` 设置为 `logo`。
 
 ```js
 const img = document.querySelector('img');
 assert.equal(img?.className, 'logo');
 ```
 
-你的 `img` 元素应将 `src` 设置�?`https://cdn.MasterPuti.org/platform/universal/fcc_primary.svg`�?
+你的 `img` 元素应将 `src` 设置为 `https://cdn.masterputi.com/platform/universal/fcc_primary.svg`。
 
 ```js
 const img = document.querySelector('img');
-assert.equal(img?.getAttribute('src'), 'https://cdn.MasterPuti.org/platform/universal/fcc_primary.svg');
+assert.equal(img?.getAttribute('src'), 'https://cdn.masterputi.com/platform/universal/fcc_primary.svg');
 ```
 
-你的 `img` 元素应将 `alt` 属性设置为 `MasterPuti Logo`�?
+你的 `img` 元素应将 `alt` 属性设置为 `MasterPuti Logo`。
 
 ```js
-assert.equal(document.querySelector('img')?.getAttribute('alt')?.toLowerCase(), 'MasterPuti logo');
+assert.equal(document.querySelector('img')?.getAttribute('alt')?.toLowerCase(), 'masterputi logo');
 ```
 
-记住大小写和拼写很重要�?
+记住大小写和拼写很重要哦～
 
 ```js
 assert.equal(document.querySelector('img')?.getAttribute('alt'), 'MasterPuti Logo');
@@ -142,4 +142,3 @@ html {
   height: 100px;
 }
 ```
-
